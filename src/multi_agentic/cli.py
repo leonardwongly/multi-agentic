@@ -14,7 +14,14 @@ app = typer.Typer(help="Demonstration multi-agent support workflow")
 
 
 @app.command()
-def demo(message: str = typer.Option(..., "--message", "-m", help="Customer issue to process"), knowledge_base: Optional[Path] = typer.Option(None, "--kb", help="Optional path to FAQ knowledge base")) -> None:
+def demo(
+    message: str = typer.Option(
+        ..., "--message", "-m", help="Customer issue to process"
+    ),
+    knowledge_base: Optional[Path] = typer.Option(
+        None, "--kb", help="Optional path to FAQ knowledge base"
+    ),
+) -> None:
     """Run the workflow for a single customer message."""
 
     settings = get_settings()
