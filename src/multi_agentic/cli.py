@@ -30,5 +30,10 @@ def demo(
     typer.echo(json.dumps(result, indent=2, default=str))
 
 
-if __name__ == "__main__":  # pragma: no cover
+def main():
+    """Entry point for the CLI."""
     app()
+
+
+if __name__ == "__main__":  # pragma: no cover
+    main()
