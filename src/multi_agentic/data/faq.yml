@@ -1,0 +1,9 @@
+- question: "How do I reset my password?"
+  answer: |
+    You can reset your password from the account settings page. Choose "Forgot password" and follow the email instructions.
+- question: "The printer is jammed. What should I do?"
+  answer: |
+    Power off the printer, remove the paper tray, and gently clear the jam. Refer to the printer manual section 4.2 for diagrams.
+- question: "How can I access the VPN?"
+  answer: |
+    Install the corporate VPN client from the portal, then sign in with your domain credentials and approve the MFA prompt.
