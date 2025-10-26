@@ -46,7 +46,7 @@ This project implements a deterministic multi-agent support workflow using [Lang
 ## Running the Demo
 Execute the CLI command with a customer issue description:
 ```bash
-python3 -m multi_agentic.cli --message "The printer on floor 3 is jammed again."
+python3 -m multi_agentic.cli demo --message "The printer on floor 3 is jammed again."
 ```
 The command prints the final ticket state as JSON, including conversation history and the recommended resolution.
 
