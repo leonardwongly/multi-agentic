@@ -28,12 +28,12 @@ This project implements a deterministic multi-agent support workflow using [Lang
 ## Setup
 1. **Create and activate a virtual environment**
    ```bash
-   python -m venv .venv
+   python3 -m venv .venv
    source .venv/bin/activate  # On Windows use `.venv\\Scripts\\activate`
    ```
 2. **Install dependencies**
    ```bash
-   pip install -e .[dev]
+   pip install -e '.[dev]'
    ```
 3. **Configure environment variables (optional)**
    ```bash
@@ -46,7 +46,7 @@ This project implements a deterministic multi-agent support workflow using [Lang
 ## Running the Demo
 Execute the CLI command with a customer issue description:
 ```bash
-python -m multi_agentic.cli --message "The printer on floor 3 is jammed again."
+python3 -m multi_agentic.cli --message "The printer on floor 3 is jammed again."
 ```
 The command prints the final ticket state as JSON, including conversation history and the recommended resolution.
 
